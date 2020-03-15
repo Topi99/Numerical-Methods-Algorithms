@@ -10,11 +10,11 @@ def ctr(z):
 
 def bairstow(a, r, s, g, roots, it, file):
     if g < 1:
-        file.write('{0} {1} {2}'.format(it, r, s))
+        file.write('{0} {1} {2}\n'.format(it, r, s))
         return None
     if g == 1:
         roots.append(float(-a[0]) / float(a[1]))
-        file.write('{0} {1} {2}'.format(it, r, s))
+        file.write('{0} {1} {2}\n'.format(it, r, s))
         return None
     if g == 2:
         D = (a[1] ** 2.0) - 4.0 * a[2] * a[0]
@@ -22,7 +22,7 @@ def bairstow(a, r, s, g, roots, it, file):
         X2 = (-a[1] + cmath.sqrt(D)) / (2.0 * a[2])
         roots.append(X1)
         roots.append(X2)
-        file.write('{0} {1} {2}'.format(it, r, s))
+        file.write('{0} {1} {2}\n'.format(it, r, s))
         return None
 
     n = len(a)

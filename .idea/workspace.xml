@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16ce98b4-5abc-43c6-a121-15b58c75025d" name="Default Changelist" comment="" />
+    <list default="true" id="16ce98b4-5abc-43c6-a121-15b58c75025d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bairstow.py" beforeDir="false" afterPath="$PROJECT_DIR$/bairstow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trapezoidal.py" beforeDir="false" afterPath="$PROJECT_DIR$/trapezoidal.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Z84tugrvBLhgxibBk8P7t1LKCq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -76,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584207605401</updated>
       <workItem from="1584207611024" duration="1200000" />
-      <workItem from="1584208902201" duration="14520000" />
+      <workItem from="1584208902201" duration="15149000" />
     </task>
     <servers />
   </component>

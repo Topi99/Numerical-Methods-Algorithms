@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def trapezoidal(a, b, f, x1, y1):
+def trapezoidal(a, b, f, x1, y1, file, n):
     # get base points
     x = np.linspace(a, b, 4)
     y = [f(el) for el in x]
@@ -23,6 +23,7 @@ def trapezoidal(a, b, f, x1, y1):
     # plot the roof of the trapezoid
     plt.plot([a, b], [y[np.where(x == a)[0][0]], y[np.where(x == b)[0][0]]], 'b')
 
+    file.write('{0} {1} {2}\n'.format(n, height, area))
     return area
 
 
@@ -65,11 +66,12 @@ if __name__ == '__main__':
 
     xs = np.linspace(lower, upper, n + 1)
     area = 0
-    for i in range(0, n):
-        area = area + trapezoidal(xs[i], xs[i+1], fun, lin, y)
 
-    file = open('output_nr.txt', 'w')
-    file.write('{0} {1} {2}'.format(n, area, h))
+    file = open('output_trapezoidal.txt', 'w')
+    k = 0
+    for i in range(0, n):
+        k = k + 1
+        area = area + trapezoidal(xs[i], xs[i+1], fun, lin, y, file, k)
     file.close()
     print(area)
     plt.show(block=True)
